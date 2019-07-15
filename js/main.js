@@ -1,7 +1,7 @@
 (function($) {
   // Get game words
   var word = {};
-  fetch("./assets/text/dictionary.json").then(function(res) {
+  fetch("/assets/text/dictionary.json").then(function(res) {
     res.json().then(function(data) {
       word = data;
       dictionarySize = Object.keys(word).length;
